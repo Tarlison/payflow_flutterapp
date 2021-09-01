@@ -8,6 +8,7 @@ class BoletoListController {
   set boletos(List<BoletoModel> value) => boletosNotifier.value = value;
 
   BoletoListController() {
+    print("?");
     getBoletos();
   }
 
@@ -16,6 +17,7 @@ class BoletoListController {
       final instance = await SharedPreferences.getInstance();
       final response = instance.getStringList("boletos") ?? <String>[];
       boletos = response.map((e) => BoletoModel.fromJson(e)).toList();
+      print(response.map((e) => BoletoModel.fromJson(e)).toList());
     } catch (e) {
       boletos = <BoletoModel>[];
     }
