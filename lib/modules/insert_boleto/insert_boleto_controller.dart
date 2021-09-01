@@ -27,10 +27,11 @@ class InsertBoletoController {
       final boletos = instance.getStringList("boletos") ?? <String>[];
       boletos.add(model.toJson());
       await instance.setStringList("boletos", boletos);
+      return;
     } catch (e) {}
   }
 
-  void cadastrarBoleto() {
+  Future<void> cadastrarBoleto() async {
     final form = formKey.currentState;
     if (form!.validate()) {
       print(model);
