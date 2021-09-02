@@ -5,6 +5,7 @@ import 'package:payflow_flutterapp/modules/meus_boletos/meus_boletos_page.dart';
 import 'package:payflow_flutterapp/shared/models/user_model.dart';
 import 'package:payflow_flutterapp/shared/themes/app_colors.dart';
 import 'package:payflow_flutterapp/shared/themes/app_text_styles.dart';
+import 'package:payflow_flutterapp/shared/widgets/date_picker/date_picker_widget.dart';
 
 class HomePage extends StatefulWidget {
   final UserModel user;
@@ -62,6 +63,7 @@ class _HomePageState extends State<HomePage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            DatePickerWidget(),
             IconButton(
                 onPressed: () {
                   homeController.setPage(0);
