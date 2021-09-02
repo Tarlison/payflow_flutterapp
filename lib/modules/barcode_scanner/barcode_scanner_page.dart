@@ -110,6 +110,7 @@ class _BarcodeScannerPageState extends State<BarcodeScannerPage> {
                     secondaryOnPressed: () async {
                       await Navigator.of(context)
                           .pushNamed("/insert_boleto_page");
+                      Navigator.pop(context);
                       setState(() {});
                     },
                   );
