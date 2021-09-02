@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:payflow_flutterapp/modules/barcode_scanner/barcode_scanner_controller.dart';
 import 'package:payflow_flutterapp/modules/barcode_scanner/barcode_scanner_status.dart';
-import 'package:payflow_flutterapp/modules/insert_boleto/insert_boleto_page.dart';
 import 'package:payflow_flutterapp/shared/bottom_sheet/bottom_sheet_widget.dart';
 import 'package:payflow_flutterapp/shared/themes/app_colors.dart';
 import 'package:payflow_flutterapp/shared/themes/app_text_styles.dart';
