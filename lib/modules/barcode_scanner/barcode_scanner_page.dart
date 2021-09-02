@@ -86,6 +86,7 @@ class _BarcodeScannerPageState extends State<BarcodeScannerPage> {
                 primaryLabel: "Inserir código do boleto",
                 primaryOnPressed: () async {
                   await Navigator.of(context).pushNamed("/insert_boleto_page");
+                  Navigator.pop(context);
                   setState(() {});
                 },
                 secondaryLabel: "Adicionar da galeria",
